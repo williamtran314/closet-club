@@ -1,0 +1,44 @@
+# this is only for search engines, it does not appear in the home
+# as long as the json variables name and description are provided
+title: CLOSET CLUB
+description: website for da club
+baseurl: ""
+url: https://hacked-jekyll.netlify.app
+
+# this information is shown on the homepage, all fields are optional and
+# can be declared either as a single string or as a string array/hash
+json:
+  name: <b>closet club</b>
+  description:
+    - a weekly radio show
+    - streaming on twitch
+    - uploaded on youtube
+    - hosted by bill tran
+  coming_up:
+    - nate dolan (ukg/bassline) [digital]
+    - billium (house) [vinyl/digital]
+    - '???'
+  profiles:
+    twitch (livestreams): https://www.twitch.tv/billiumbeats
+    youtube (recordings): https://www.youtube.com/watch?v=amKXYzE6vYs&list=PLrvgc7mxMvcpsBIB1iq52z9ncERoSSXWa
+    instagram (updates): https://www.instagram.com/teamcloset/
+
+  etc: 
+    buy merch: https://www.shopify.com/
+    blog: blog.html
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
